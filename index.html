@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubre El Salvador</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header class="navbar" id="navbar">
+
+        <!-- Logo a la izquierda -->
+        <div class="logo">
+            <span>KODIGO Travel</span>
+            <strong>El Salvador</strong>
+        </div>
+
+        <!-- Botón para abrir menú en celular -->
+        <button class="boton-menu" id="botonMenu">☰</button>
+
+        <!-- Menú de navegación a la derecha -->
+        <nav class="menu" id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#datos">El País</a>
+            <a href="#clima">Clima</a>
+            <a href="#footer" class="enlace-destacado">Contáctanos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- SECCIÓN PRINCIPAL (HERO/BANNER) -->
+    <section class="hero" id="inicio">
+        <div class="hero-contenido">
+            <p class="texto-pequeño">Bienvenido a Centroamérica</p>
+            <h1>El Salvador<br /><em>Te espera</em></h1>
+            <p class="descripcion">
+                Volcanes, playas del Pacífico, pueblos vivos y gente muy amable.
+                Un pequeño país pero lleno de maravillas que puedes descubrir.
+            </p>
+            <div class="botones-hero">
+                <a href="#destinos" class="boton-azul">Ver destinos</a>
+                <a href="#datos" class="boton-borde">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GALERÍA DE DESTINOS -->
+    <section class="galeria" id="destinos">
+
+        <div class="titulo-seccion">
+            <p class="etiqueta">Lugares para visitar</p>
+            <h2>Destinos <em>Principales</em></h2>
+
+            <!-- Botones para filtrar por tipo -->
+            <div class="filtros" id="filtros">
+                <button class="filtro activo" data-categoria="todos">Todos</button>
+                <button class="filtro" data-categoria="naturaleza">Naturaleza</button>
+                <button class="filtro" data-categoria="playa">Playas</button>
+                <button class="filtro" data-categoria="cultura">Cultura</button>
+                <button class="filtro" data-categoria="aventura">Aventura</button>
+            </div>
+        </div>
+
+        <!-- Cuadrícula de tarjetas con CSS Grid -->
+        <div class="cuadricula" id="cuadricula">
+
+            <div class="tarjeta" data-categoria="naturaleza">
+                <div class="tarjeta-imagen">
+                    <img src="https://www.infobae.com/resizer/v2/BLLGALK465APJBBRHFFP4JT7DA.jpg?auth=25084f783920c3059306f49fa935bdcea23e2ce894a8d60446a63d78d7cd33ba&smart=true&width=350&height=221&quality=85"
+                        alt="Lago de Coatepeque" />
+                    <span class="tipo-lugar">Naturaleza</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Lago de Coatepeque</h3>
+                    <p>Un cráter volcánico con aguas azul turquesa. Ideal para nadar, pasear en kayak y comer mariscos
+                        frescos.</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 Santa Ana</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="playa">
+                <div class="tarjeta-imagen">
+                    <img src="https://i0.wp.com/passporterapp.com/es/blog/wp-content/uploads/2022/05/que-ver-en-el-tunco-scaled.jpg?fit=2560%2C1707&ssl=1"
+                        alt="El Tunco" />
+                    <span class="tipo-lugar">Playa</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Playa El Tunco</h3>
+                    <p>La playa más famosa del país para hacer surf. Olas perfectas, ambiente relajado y atardeceres
+                        increíbles.</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 La Libertad</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="cultura">
+                <div class="tarjeta-imagen">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/e2/b1/26.jpg"
+                        alt="Suchitoto" />
+                    <span class="tipo-lugar">Cultura</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Suchitoto</h3>
+                    <p>Pueblo colonial con calles de adoquines, iglesias antiguas y mucho arte. Muy pintoresco y
+                        tranquilo.</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 Cuscatlán</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="aventura">
+                <div class="tarjeta-imagen">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/16/74/c1/b3.jpg"
+                        alt="Volcán Izalco" />
+                    <span class="tipo-lugar">Aventura</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Volcán Izalco</h3>
+                    <p>Llamado el "Faro del Pacífico". Es uno de los volcanes más jóvenes de América y todavía está
+                        activo.</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 Sonsonate</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="cultura">
+                <div class="tarjeta-imagen">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/16/74/aa/ce.jpg"
+                        alt="Joya de Cerén" />
+                    <span class="tipo-lugar">Cultura</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Joya de Cerén</h3>
+                    <p>Sitio arqueológico maya declarado Patrimonio de la Humanidad. Conocida como la "Pompeya de
+                        América".</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 La Libertad</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="playa">
+                <div class="tarjeta-imagen">
+                    <img src="https://beach-searcher.es/images/beaches/222201043/SV201043.jpg" alt="Playa Espino" />
+                    <span class="tipo-lugar">Playa</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Playa El Espino</h3>
+                    <p>Es una de las playas más extensas y tranquilas de El Salvador. Con más de 10 kilómetros de costa
+                        plana, destaca por su arena clara, clima cálido y oleaje moderado.
+                    </p>
+                    <div class="pie-tarjeta">
+                        <span>📍 Usulután</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="naturaleza">
+                <div class="tarjeta-imagen">
+                    <img src="https://turismo.sv/wp-content/uploads/2019/06/el-imposible-1.jpg"
+                        alt="Parque El Imposible" />
+                    <span class="tipo-lugar">Naturaleza</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Parque El Imposible</h3>
+                    <p>El bosque más grande de El Salvador. Tiene jaguares, pumas y más de 400 tipos de aves.</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 Ahuachapán</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta" data-categoria="aventura">
+                <div class="tarjeta-imagen">
+                    <img src="https://congresosenelsalvador.com/wp-content/uploads/2022/06/rutaflores.jpg"
+                        alt="Ruta de las Flores" />
+                    <span class="tipo-lugar">Aventura</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Ruta de las Flores</h3>
+                    <p>Un recorrido por pueblos llenos de flores, café, artesanías y comida típica. Muy colorido y
+                        alegre.</p>
+                    <div class="pie-tarjeta">
+                        <span>📍 Occidente</span>
+                        <span>✨📸📸📸✨</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DATOS DEL PAÍS-->
+    <section class="datos" id="datos">
+
+        <div class="titulo-seccion">
+            <p class="etiqueta etiqueta-verde">Información útil</p>
+            <h2 class="titulo-verde">Todo lo que necesitas <em>saber</em></h2>
+        </div>
+
+        <!-- Flexbox con flex-wrap: se acomoda solo en celular -->
+        <div class="datos-fila">
+
+            <div class="dato-tarjeta">
+                <div class="icono">🗺️</div>
+                <h3>Ubicación</h3>
+                <p>El país más pequeño de Centroamérica. Limita con Guatemala, Honduras y el Océano Pacífico.</p>
+            </div>
+
+            <div class="dato-tarjeta">
+                <div class="icono">💵</div>
+                <h3>Moneda</h3>
+                <p>Se usa el dólar americano (USD). Desde el 1 de enero de 2001, también se acepta Bitcoin como moneda
+                    oficial.</p>
+            </div>
+
+            <div class="dato-tarjeta">
+                <div class="icono">🌡️</div>
+                <h3>Clima</h3>
+                <p>Hay dos épocas: seca (nov–abr) y lluviosa (may–oct). La temperatura promedio es de 24°C.</p>
+            </div>
+
+            <div class="dato-tarjeta">
+                <div class="icono">✈️</div>
+                <h3>Cómo llegar</h3>
+                <p>El aeropuerto está en Comalapa, llamando: Aeropuerto Internacional de El Salvador San Óscar Arnulfo
+                    Romero y Galdámez. Hay vuelos directos desde Miami, Houston y Los Ángeles.</p>
+            </div>
+
+            <div class="dato-tarjeta">
+                <div class="icono">🍽️</div>
+                <h3>Comida típica</h3>
+                <p>Las pupusas son el plato más famoso. También hay yuca frita, tamales, sopa de pata y horchata.</p>
+            </div>
+
+            <div class="dato-tarjeta">
+                <div class="icono">🏄</div>
+                <h3>Surf</h3>
+                <p>El Salvador tiene olas de clase mundial. Es sede de campeonatos internacionales de surf.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--CLIMA POR MES (INTERACTIVO)-->
+    <section class="clima" id="clima">
+
+        <div class="titulo-seccion">
+            <p class="etiqueta">Planifica tu viaje</p>
+            <h2>¿Cuándo es el <em>mejor momento</em>?</h2>
+        </div>
+
+        <div class="clima-contenedor">
+
+            <!-- Cuadrícula de meses para elegir -->
+            <div class="selector-meses">
+                <p class="instruccion">Elige un mes para ver el clima:</p>
+                <div class="meses" id="meses">
+                    <button class="mes" data-mes="0">Ene</button>
+                    <button class="mes" data-mes="1">Feb</button>
+                    <button class="mes" data-mes="2">Mar</button>
+                    <button class="mes" data-mes="3">Abr</button>
+                    <button class="mes" data-mes="4">May</button>
+                    <button class="mes" data-mes="5">Jun</button>
+                    <button class="mes" data-mes="6">Jul</button>
+                    <button class="mes" data-mes="7">Ago</button>
+                    <button class="mes" data-mes="8">Sep</button>
+                    <button class="mes" data-mes="9">Oct</button>
+                    <button class="mes" data-mes="10">Nov</button>
+                    <button class="mes" data-mes="11">Dic</button>
+                </div>
+            </div>
+
+            <!-- Información del mes elegido -->
+            <div class="panel-clima" id="panelClima">
+                <div class="clima-icono" id="climaIcono">☀️</div>
+                <div class="clima-texto">
+                    <h3 id="climaMes">–</h3>
+                    <p id="climaDescripcion">Elige un mes arriba para ver el clima.</p>
+
+                    <div class="barras">
+                        <div class="barra-fila">
+                            <span>🌡️ Temperatura</span>
+                            <div class="barra-fondo">
+                                <div class="barra-relleno naranja" id="barraTemp"></div>
+                            </div>
+                            <span id="valorTemp">–</span>
+                        </div>
+                        <div class="barra-fila">
+                            <span>🌧️ Lluvia</span>
+                            <div class="barra-fondo">
+                                <div class="barra-relleno azul" id="barraLluvia"></div>
+                            </div>
+                            <span id="valorLluvia">–</span>
+                        </div>
+                    </div>
+
+                    <div class="actividades">
+                        <strong>Bueno para:</strong>
+                        <div id="etiquetasActividades"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- (FOOTER) -->
+    <footer class="footer" id="footer">
+
+        <!-- Fila superior con Flexbox -->
+        <div class="footer-superior">
+
+            <div class="footer-marca">
+                <span class="footer-bandera">KODIGO Travel</span>
+                <h3>El Salvador</h3>
+                <p>Pequeño País, Gran Corazón</p>
+            </div>
+
+            <div class="footer-columna">
+                <h4>Destinos</h4>
+                <a href="#destinos">Lago Coatepeque</a>
+                <a href="#destinos">Playa El Tunco</a>
+                <a href="#destinos">Suchitoto</a>
+                <a href="#destinos">Parque El Imposible</a>
+            </div>
+
+            <div class="footer-columna">
+                <h4>Información</h4>
+                <a href="#datos">Cómo llegar</a>
+                <a href="#datos">Comida típica</a>
+                <a href="#clima">Clima</a>
+                <a href="#datos">Moneda</a>
+            </div>
+
+            <div class="footer-columna">
+                <h4>Contacto</h4>
+                <p>📧 gustavotravel@gmail.com</p>
+                <p>📞 +503 2222-0000</p>
+                <p>🌐 KODIGO.travel</p>
+            </div>
+
+        </div>
+
+        <!-- Línea inferior -->
+        <div class="footer-inferior">
+            <p>© 2026 KODIGO Travel Todos los derechos reservados | By Gustavo Vásquez</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
